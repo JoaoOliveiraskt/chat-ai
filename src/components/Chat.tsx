@@ -20,13 +20,13 @@ export function Chat() {
   });
 
   return (
-    <Card className="w-[700px] ">
+    <Card className="w-[440px] border border-zinc-400 ">
       <CardHeader>
-        <CardTitle>Chat AI</CardTitle>
-        <CardDescription>Using Vercel SDK to create a chat bot</CardDescription>
+        <CardTitle className="border-b-2 border-zinc-400 pb-1">Chat AI</CardTitle>
+        <CardDescription>Um chatbot inteligente pronto para te ajudar a qualquer momento.</CardDescription>
       </CardHeader>
       <CardContent>
-        <ScrollArea className="h-[600px] w-full  pr-4">
+        <ScrollArea className="h-[600px] w-full space-y-4  pr-4">
         {messages.map((message) => {
           return (
             <div key={message.id}
@@ -48,7 +48,7 @@ export function Chat() {
 
               <p className="leading-relaxed">
                 <span className="block font-bold text-slate-800">
-                    {message.role === 'user' ? 'Usuário' : 'Assistente'}:
+                    {message.role === 'user' ? 'Usuário' : 'AI'}:
                 </span>
                 {message.content}
               </p>
@@ -60,6 +60,7 @@ export function Chat() {
       <CardFooter>
         <form className="flex gap-5 w-full" onSubmit={handleSubmit}>
           <Input
+            className="border border-zinc-300 "
             placeholder="How can I help you?"
             value={input}
             onChange={handleInputChange}
