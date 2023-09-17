@@ -12,7 +12,7 @@ Estas instruções irão guiá-lo sobre como obter uma cópia local do projeto e
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [AI SDK](https://sdk.vercel.ai/docs/guides/providers/openai)
--[Shadcn/UI](https://ui.shadcn.com)
+- [Shadcn/UI](https://ui.shadcn.com)
 
 
 ### Pré-requisitos: Node.js e npm
